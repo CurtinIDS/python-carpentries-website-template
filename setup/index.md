@@ -4,6 +4,9 @@ title: Testing Setup
 root: ..
 ---
 
+To be replaced with the actual setup.
+
+
 This directory contains scripts for testing your machine to make sure
 you have the software you'll need for your workshop installed.  To use
 these scripts:
