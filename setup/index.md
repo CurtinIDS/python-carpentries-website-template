@@ -5,7 +5,7 @@ root: ..
 ---
 
 ## Local Setup
-1. Navigate to the https://code.visualstudio.com/ with your web browser.  
+1. Navigate to the [https://code.visualstudio.com/](https://code.visualstudio.com/) with your web browser.  
 
 2. Download Visual Studio Code for your specific platform/Operating System.  
 
@@ -16,13 +16,15 @@ root: ..
 3. Run the Visual Studio Code Installer and follow all prompts.  
 
 
-4. Open Visual Studio Code, navigate to the File Explorer and clone this repository with the following repository name `https://github.com/CurtinIDS/CIDS_Carpentries_Python` into your preferred folder destination.
+4. Open Visual Studio Code, navigate to the File Explorer (1.) and clone this repository (2.), entering the following repository name `https://github.com/CurtinIDS/CIDS_Carpentries_Python`, then selecting your preferred folder destination. 
+    - If asked "`Would you like to open this repository?`", click "`Open`". 
+    - If asked: "`Do you trust the authors of the files in this folder?`" click "`Trust Folder & Continue`", read the dialogue and then click "`Yes, I trust the authors`"
 
     ![Clone Repository with Visual Studio Code](../assets/vs_code_clone_repo.jpg)
-5. Navigate to the Extension sidebar then search for and install the Python and Jupyter extensions.  
+5. Navigate to the Extension sidebar (1.) then search (2.) for and install both the Python and Jupyter extensions.  
 
     ![Installing Extensions](../assets/vs_code_extensions.jpg)
-6. Enter the Visual Studio Code Command Pallette using `Ctrl + Shift + P` (Windows) or `Command + Shift + P` (MacOS) and locate `Python: Create Environment`.  
+6. With the repository folder you downloaded earlier still open, enter the Visual Studio Code Command Pallette using `Ctrl + Shift + P` (Windows) or `Command + Shift + P` (MacOS) and locate `Python: Create Environment`.  If you cannot find it, you can partially type `Python` and the list should be filtered more
 
     ![Creating a Virtual Environment](../assets/vs_code_create_environment.jpg)  
 7. Select `Conda`.
@@ -38,7 +40,7 @@ root: ..
     `pip install -r requirements.txt`
 
 ### Google Colab
-If you were unable to complete the above steps, you may alternatively access the workshop material using Google Colaboratory as an emergency measure. Please ensure that you have a Google Account.
+If you were unable to complete the above steps, you may alternatively access the workshop material using Google Colaboratory (colab) as an emergency measure. Please ensure that you have a Google Account.
 1. [Episode 1 - Python Fundamentals](https://colab.research.google.com/github/CurtinIDS/CIDS_Carpentries_Python/blob/main/notebooks/1_Python_Fundamentals.ipynb)
 2. [Episode 2 - Analysing Patient Data](https://colab.research.google.com/github/CurtinIDS/CIDS_Carpentries_Python/blob/main/notebooks/2_Analysing_Patient_Data.ipynb)
 3. [Episode 3 - Visualising Tabular Data](https://colab.research.google.com/github/CurtinIDS/CIDS_Carpentries_Python/blob/main/notebooks/3_Visualising_Tabular_Data.ipynb)
@@ -48,3 +50,14 @@ If you were unable to complete the above steps, you may alternatively access the
 7. [Episode 7 - Making Choices](https://colab.research.google.com/github/CurtinIDS/CIDS_Carpentries_Python/blob/main/notebooks/7_Making_Choices.ipynb)
 8. [Epsiode 8 - Creating Functions](https://colab.research.google.com/github/CurtinIDS/CIDS_Carpentries_Python/blob/main/notebooks/8_Creating_Functions.ipynb)
 9. [Episode 9 - Data Analysis with Pandas](https://colab.research.google.com/github/CurtinIDS/CIDS_Carpentries_Python/blob/main/notebooks/9_Data_Analysis_with_Pandas.ipynb)
+
+
+
+
+[//]: # (Note for people editing this file. To create a colab link, combine the prefix:)
+
+[//]: # (https://colab.research.google.com/github/)
+
+[//]: # (With a link to the file in that repo including the blob/main, e.g.:)
+
+[//]: # (CurtinIDS/CIDS_Carpentries_Python/blob/main/notebooks/1_Python_Fundamentals.ipynb)
