@@ -1,68 +1,50 @@
 ---
 layout: page
-title: Testing Setup
+title: Setup
 root: ..
 ---
 
-To be replaced with the actual setup.
+## Local Setup
+1. Navigate to the https://code.visualstudio.com/ with your web browser.  
+
+2. Download Visual Studio Code for your specific platform/Operating System.  
 
 
-This directory contains scripts for testing your machine to make sure
-you have the software you'll need for your workshop installed.  To use
-these scripts:
+    ![Download Visual Studio Code](../assets/vs_code_download.jpg)
 
-1.  Download [swc-installation-test-1.py](swc-installation-test-1.py).
 
-2.  Run it from the shell:
+3. Run the Visual Studio Code Installer and follow all prompts.  
 
-    ~~~
-    $ python swc-installation-test-1.py
-    Passed
-    ~~~
 
-3.  Download [swc-installation-test-2.py](swc-installation-test-2.py).
+4. Open Visual Studio Code, navigate to the File Explorer and clone this repository with the following repository name `https://github.com/CurtinIDS/CIDS_Carpentries_Python` into your preferred folder destination.
 
-4.  Run it from the shell:
+    ![Clone Repository with Visual Studio Code](../assets/vs_code_clone_repo.jpg)
+5. Navigate to the Extension sidebar then search for and install the Python and Jupyter extensions.  
 
-    ~~~
-    $ python swc-installation-test-2.py
-    check virtual-shell...  pass
-    ...
-    Successes:
+    ![Installing Extensions](../assets/vs_code_extensions.jpg)
+6. Enter the Visual Studio Code Command Pallette using `Ctrl + Shift + P` (Windows) or `Command + Shift + P` (MacOS) and locate `Python: Create Environment`.  
 
-    virtual-shell Bourne Again Shell (bash) 4.2.37
-    ...
-    ~~~
+    ![Creating a Virtual Environment](../assets/vs_code_create_environment.jpg)  
+7. Select `Conda`.
 
-    If you see something like:
+    ![Creating a Conda Environment](../assets/conda_env.jpg)
+8. Select `Python 3.11`.  
 
-    ~~~
-    $ python swc-installation-test-2.py
-    check virtual-shell...  fail
-    ...
-    check for command line shell (virtual-shell) failed:
-      command line shell (virtual-shell) requires at least one of the following dependencies
-      For instructions on installing an up-to-date version, see
-      http://software-carpentry.org/setup/
-      causes:
-      check for Bourne Again Shell (bash) failed:
-        could not find 'bash' executable for Bourne Again Shell (bash)
-        For instructions on installing an up-to-date version, see
-        http://software-carpentry.org/setup/
-    ...
-    ~~~
+    ![Selecting Python Version](../assets/python_version.jpg)
+9. Open Command Prompt or Terminal within Visual Studio Code using `Ctrl + J` (Windows) or `Command + J` (MacOS).  
 
-    follow the suggestions to try and install any missing software.  For
-    additional troubleshooting information, you can use the `--verbose`
-    option:
+10. Run the following command to install dependencies.  
 
-    ~~~
-    $ python swc-installation-test-2.py --verbose
-    check virtual-shell...  fail
-    ...
-    ==================
-    System information
-    ==================
-    os.name            : posix
-    ...
-    ~~~
+    `pip install -r requirements.txt`
+
+### Google Colab
+If you were unable to complete the above steps, you may alternatively access the workshop material using Google Colaboratory as an emergency measure. Please ensure that you have a Google Account.
+1. [Episode 1 - Python Fundamentals](https://colab.research.google.com/github/CurtinIDS/CIDS_Carpentries_Python/blob/main/notebooks/1_Python_Fundamentals.ipynb)
+2. [Episode 2 - Analysing Patient Data](https://colab.research.google.com/github/CurtinIDS/CIDS_Carpentries_Python/blob/main/notebooks/2_Analysing_Patient_Data.ipynb)
+3. [Episode 3 - Visualising Tabular Data](https://colab.research.google.com/github/CurtinIDS/CIDS_Carpentries_Python/blob/main/notebooks/3_Visualising_Tabular_Data.ipynb)
+4. [Episode 4 - Storing Multiple Values in Lists](https://colab.research.google.com/github/CurtinIDS/CIDS_Carpentries_Python/blob/main/notebooks/4_Storing_Multiple_Values_in_Lists.ipynb)
+5. [Episode 5 - Repeating Actions with Loops](https://colab.research.google.com/github/CurtinIDS/CIDS_Carpentries_Python/blob/main/notebooks/5_Repeating_Actions_with_Loops.ipynb)
+6. [Episode 6 - Analysing Data from Multiple Files](https://colab.research.google.com/github/CurtinIDS/CIDS_Carpentries_Python/blob/main/notebooks/6_Analysing_Data_from_Multiple_Files.ipynb)
+7. [Episode 7 - Making Choices](https://colab.research.google.com/github/CurtinIDS/CIDS_Carpentries_Python/blob/main/notebooks/7_Making_Choices.ipynb)
+8. [Epsiode 8 - Creating Functions](https://colab.research.google.com/github/CurtinIDS/CIDS_Carpentries_Python/blob/main/notebooks/8_Creating_Functions.ipynb)
+9. [Episode 9 - Data Analysis with Pandas](https://colab.research.google.com/github/CurtinIDS/CIDS_Carpentries_Python/blob/main/notebooks/9_Data_Analysis_with_Pandas.ipynb)
