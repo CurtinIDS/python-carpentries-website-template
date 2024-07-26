@@ -26,20 +26,16 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 
 
 {% comment %}
-8< ============= For a workshop delete from here =============
-For a workshop please delete the following block until the next dashed-line. This is just a check to make sure you're paying attention.
+For a workshop please delete the following 'div' block of class 'alert alert-danger' . This is just a check to make sure you're paying attention and are editing this document
 Altneratively delete everything include the {% comment %} and {% endcomment %}
 {% endcomment %}
-
 
 <div class="alert alert-danger">
 This is the workshop template. Delete these lines and use it to customize
 your own website. You will need to edit the header of this file (`index.md`), and ensure both `_includes/schedule.html` and `setup/index.md` are accurate.  For `_includes/schedule.html`, you should be able to copy-paste lines as needed.
 </div>
 
-{% comment %}
-8< ============================= until here ==================
-{% endcomment %} 
+
 
 
 

@@ -25,8 +25,9 @@ Making the website is straightforward if you follow these steps after logging in
     ![screenshot of this repository's GitHub page with an arrow pointing to the the 'use this template' button on the top left](fig/select-github-use-template.png?raw=true)
 2. If the repo is public, a new webpage should be created at `curtinids.github.io/<reponame>`
 3. Edit the workshop title in '_config.yml'. You shouldnt need to edit nay other settings
-4. Edit relevant information at the top of "index.md". If you want to change any other wording on the main page (other than the scheudle), scroll down and make your changes using html.
-5. Edit "_includes/schedule.html". This file is inserted into the main index. You will be editing the two tables defined after the `<table class="table table-striped">` keywords. an enclosing `<tr>` indicates a row, and an enclosing `<td>` indicates a column. By default, there will be two rows per column. If you want to insert another row, copy paste the following into the desired location in the table:
+4. Edit relevant information at the top of "index.md". If you want to change any other wording on the main page (other than the scheudle), scroll down and make your changes using html. Make sure to delete the alert block at the top (next to the comment that tells you to delete it)
+5. Edit "_includes/schedule.html". This file is inserted into the main index. You will be editing the two tables defined after the `<table class="table table-striped">` keywords. an enclosing `<tr>` indicates a row, and an enclosing `<td>` indicates a column. By default, there will be two rows per column.  
+  If you want to insert another row, copy and paste the following into the desired location in the table after a `</tr>` (forward slash tr) and before the next `<tr>` (bare tr):
     ```html
     <tr>
       <td>TIME></td>
@@ -37,7 +38,7 @@ Making the website is straightforward if you follow these steps after logging in
     
 6. Ensure `setup/index.md` (which is hosted at to `curtinids.github.io/<reponame>/setup` ) is up to date
 
-7. Have a quick browse through the website and make sure there's no placeholders left and everything is correct
+7. Have a browse through the website and make sure there's no placeholders left and everything is correct
 
 
     
@@ -52,19 +53,19 @@ This website currently requires a specific ruby version, 2.7.3.
 Follow the instructions [here](https://carpentries.github.io/lesson-example/setup.html#jekyll-setup-for-lesson-development) for OS X/ Windows. There's also a Linux section in that link, but it involves installing homebrew. See below for an alternate way.
 
 ### Linux alternate install
-Unfortunately the ubuntu/debian versions are currently out of date, and while conda-forge has newer and older versions, it does not have 2.7.3.
+Unfortunately the ubuntu/debian versions are currently out of date, and while conda-forge has newer and older versions, it does not have 2.7.3.  
 To install 2.7.3 on linux, it's usually easiest to do the following:
-1. Install rbenv (ruby env):
+1. Install [rbenv](https://github.com/rbenv/rbenv.git) (Ruby environment manager):
     ```shell
     git clone https://github.com/rbenv/rbenv.git ~/.rbenv
     ~/.rbenv/bin/rbenv init
     ```
-    then <u>restart your shell</u>
+    then <u><b>restart your shell</b></u>
 2. Install the ruby build plugin into the rbenv folder
     ```
     git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
     ```
-3. Install ruby 2.7.3 into the local directory and all the needed packages, then cleanup:
+3. Use the following commands to install ruby 2.7.3, download the repo, set the local ruby version in the local directory to 2.7.3, install all the needed packages, and then cleanup:
     ```
     rbenv init
     rbenv install 2.7.3
@@ -75,6 +76,8 @@ To install 2.7.3 on linux, it's usually easiest to do the following:
     gem install bundler
     make clean
     ```
+
+    
 ## Building the website locally
 Once you've installed the pre-requisites, simply `cd` into the repo folder in a  terminal and run:
 ```
