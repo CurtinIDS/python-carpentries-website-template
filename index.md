@@ -285,7 +285,7 @@ SURVEYS -These will automatically link to the carpentries surveys. .
 
 <p>
   To participate in this workshop,
-  you <b><u>will</u></b> need to follow the instructions on the <a href="{{ relative_root_path }}/setup">setup page</a> <br>
+  you <b><u>will</u></b> need to follow the instructions on the <a href="{{ relative_root_path }}{% link setup/index.md %}">setup page</a> <br>
   In addition, you will need an up-to-date web browser.
 </p>
 
