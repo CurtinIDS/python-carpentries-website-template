@@ -26,7 +26,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 
 
 {% comment %}
-For a workshop please delete the following 'div' block of class 'alert alert-danger' . This is just a check to make sure you're paying attention and are editing this document
+For a workshop please delete the following 'div' block of class 'alert alert-danger' and this comment. This is just a check to make sure you're paying attention and are editing this document
 Altneratively delete everything include the {% comment %} and {% endcomment %}
 {% endcomment %}
 
@@ -297,7 +297,7 @@ SURVEYS -These will automatically link to the carpentries surveys. .
 </p>
 
 <p>
-  <a href="https://glosario.carpentries.org/">Glosario</a> is a multilingual glossary 
+  <a href="https://glosario.carpentries.org/en/">Glosario</a> is a multilingual glossary 
   for computing and data science terms. The glossary helps 
   learners who attend workshops and use our lessons to make sense of computational and programming jargon written in English by offering it 
   in their native language. This glossary may be useful for looking up unknown terms while following the setup.
