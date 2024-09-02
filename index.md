@@ -21,13 +21,19 @@ collaborative_notes:  # optional: URL for the workshop collaborative notes, e.g.
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
-
+{% comment %}
+For some reason, the relative_root_path seems out of scope in this file, so we
+need to re-assign it here
+{% endcomment %}
+{% include base_path.html %}
 
 
 
 {% comment %}
 For a workshop please delete the following 'div' block of class 'alert alert-danger' and this comment. This is just a check to make sure you're paying attention and are editing this document
 Altneratively delete everything include the {% comment %} and {% endcomment %}
+
+
 {% endcomment %}
 
 <div class="alert alert-danger">
@@ -72,7 +78,7 @@ displayed if the 'eventbrite' field in the header is not set.
 href="{{site.swc_site}}">Software Carpentry</a>, <a href="{{site.dc_site}}">Data Carpentry</a>, and
 <a href="{{site.lc_site}}">Library Carpentry</a> communities of Instructors, Trainers, Maintainers,
 helpers, and supporters who share a mission to teach foundational computational and data science
-skills to researchers. This workshop is a 2-day blend of both Software Carpentries and Data caprnetires.
+skills to researchers. This workshop is a 2-day blend of both Software Carpentries and Data Caprnetires.
 
 
 
@@ -100,8 +106,8 @@ skills to researchers. This workshop is a 2-day blend of both Software Carpentri
 </p>
 <p align="center">
   <em>
-    For more information on what we teach and why,
-    please see our papers
+    For more information on what we  and the Carpentries teach and why,
+    please see the Carpentries' papers
     "<a href="https://doi.org/10.1371/journal.pcbi.1005510">Good Enough Practices for Scientific Computing</a>" and "<a href="https://doi.org/10.1371/journal.pbio.1001745">Best Practices for Scientific Computing</a>".
   </em>
 </p>
@@ -111,7 +117,7 @@ skills to researchers. This workshop is a 2-day blend of both Software Carpentri
   The course is aimed at graduate students and other researchers.
   <strong>
     You don't need to have any previous knowledge of the tools
-    that will be presented at the workshop.
+    that will be presented at the workshop, but you will need basic computer skills, including manging files on your laptop.
   </strong>
 </p>
 
@@ -123,7 +129,7 @@ skills to researchers. This workshop is a 2-day blend of both Software Carpentri
 
 <p id="where">
   <strong>Where:</strong> <br>
-  {{page.address}}.
+  {{page.address}}. <br>
   Get directions with
   <a href="//www.openstreetmap.org/?mlat={{page.latitude}}&mlon={{page.longitude}}&zoom=16">OpenStreetMap</a>
   or
