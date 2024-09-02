@@ -23,11 +23,12 @@ Lesson navigation bar.
       </a>
 
       {% comment %} Always show link to home page. {% endcomment %}
-      <a class="navbar-brand" href="{{ relative_root_path }}{% link index.md %}">Home</a>
+      <a class="navbar-brand" href="https://datascience.curtin.edu.au/">CIDS</a>
 
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
+        <li><a href="{{ relative_root_path }}{% link index.md %}">Home</a></li>
 
         {% comment %} Always show code of conduct. {% endcomment %}
         <li><a href="{{ relative_root_path }}{% link CODE_OF_CONDUCT.md %}">Code of Conduct</a></li>
